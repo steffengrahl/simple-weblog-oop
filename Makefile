@@ -1,4 +1,5 @@
 install: install-dependencies install-database
+	cp .env.dist .env
 
 install-database:
 	rm -f data/db.sqlite

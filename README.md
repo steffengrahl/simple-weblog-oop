@@ -29,6 +29,10 @@ A show-and-tell project to show my students how to create a simple but extendabl
    ```bash
    cd public/
    ```
+4. Run install command. This will prepare the database, copy the .env file and install all dependencies with composer
+   ```bash
+   make install
+   ```
 4. Start PHP´s internal server.
    ```bash
    php -S localhost:8000

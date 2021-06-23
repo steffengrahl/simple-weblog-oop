@@ -257,3 +257,6 @@ data/db.sqlite
 
 # composer
 .composer.lock
+
+# app
+.env
