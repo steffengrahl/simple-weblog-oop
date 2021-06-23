@@ -256,7 +256,7 @@ data/db.sqlite
 .idea
 
 # composer
-.composer.lock
+composer.lock
 
 # app
 .env
