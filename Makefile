@@ -6,4 +6,4 @@ install-database:
 	cat database-structure.sql | sqlite3 data/db.sqlite
 
 install-dependencies:
-	php bin/composer dump-autoload
+	php bin/composer install
