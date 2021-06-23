@@ -254,3 +254,6 @@ data/db.sqlite
 
 # IDE
 .idea
+
+# composer
+.composer.lock
