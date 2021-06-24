@@ -1,27 +1,27 @@
 CREATE TABLE IF NOT EXISTS categories
 (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
-    name       VARCHAR(128),
-    created_at DATETIME,
-    updated_at DATETIME
+    name       VARCHAR(128) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS posts
 (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
-    title       VARCHAR(128),
-    content     TEXT,
-    category_id INTEGER,
-    created_at  DATETIME,
-    updated_at  DATETIME
+    title       VARCHAR(128) NOT NULL,
+    content     TEXT NOT NULL,
+    category_id INTEGER DEFAULT NULL,
+    created_at  DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at  DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS tags
 (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
-    name       VARCHAR(128),
-    created_at DATETIME,
-    updated_at DATETIME
+    name       VARCHAR(128) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS tags_to_posts

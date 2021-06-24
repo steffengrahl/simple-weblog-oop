@@ -5,6 +5,7 @@
     }
   },
   "require": {
+    "ext-pdo": "*",
     "symfony/dotenv": "^v5.3"
   },
   "require-dev": {
